@@ -16,9 +16,13 @@
       ansible.builtin.apt:
         name: zsh
         state: present
-    - name: install ranger
+    - name: install lf
       ansible.builtin.apt:
-        name: ranger
+        name: lf
+        state: present
+    - name: install zoxide
+      ansible.builtin.apt:
+        name: zoxide
         state: present
     - name: install tmux
       ansible.builtin.apt:
@@ -51,10 +55,6 @@
     - name: install tree
       ansible.builtin.apt:
         name: tree
-        state: present
-    - name: install thefuck
-      ansible.builtin.apt:
-        name: thefuck
         state: present
     - name: install curl
       ansible.builtin.apt:
