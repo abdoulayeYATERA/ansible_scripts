@@ -1,0 +1,12 @@
+virtualmachines:
+  hosts:
+    vm01:
+      ansible_host: 192.168.0.50
+      hostname: proxmox1
+      domainname: myproxmox.com
+    vm02:
+      ansible_host: 192.168.0.36
+      hostname: proxmox2
+      domainname: myproxmox.com
+  vars:
+    ansible_user: root
